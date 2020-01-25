@@ -55,6 +55,7 @@
 		A23BEF2623D9F7150004B350 /* NetworkConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnector.swift; sourceTree = "<group>"; };
 		A23BEF2823D9F93B0004B350 /* GetUserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserOperation.swift; sourceTree = "<group>"; };
 		A276082F23DB2ABF00489842 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A28953DE23DBE051002655F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		A23BEECD23D9D5E40004B350 = {
 			isa = PBXGroup;
 			children = (
+				A28953DE23DBE051002655F5 /* README.md */,
 				A23BEEF123D9D9580004B350 /* NetworkLayer */,
 				A23BEEFC23D9D9580004B350 /* Tests */,
 				A23BEED723D9D5E40004B350 /* Products */,
