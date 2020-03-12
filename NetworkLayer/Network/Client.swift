@@ -22,14 +22,8 @@ public struct Client {
                                          completionHandler: @escaping (Result<ResponseType, Error>) -> Void)
         -> URLSessionTask {
         dispatcher.dispatch(request: request) { (result: Result<Data, Error>) in
-            let decodedResult = result.flatMap
-            { (data: Data) -> Result<ResponseType, Error> in
-                do {
-                    let decodedData = try self.decoder.decode(ResponseType.self, from: data)
-                    return .success(decodedData)
-                } catch let error {
-                    return .failure(error)
-                }
+            let decodedResult = result.flatMap { data in
+                Result { try self.decoder.decode(ResponseType.self, from: data) }
             }
             completionHandler(decodedResult)
         }
